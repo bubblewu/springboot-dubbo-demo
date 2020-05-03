@@ -7,9 +7,9 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
-@EnableDubbo(scanBasePackages = "com.bubble.consumer.controller")
-@PropertySource("classpath:application.properties")
-@ComponentScan(value = {"com.bubble.consumer.controller"})
+//@EnableDubbo(scanBasePackages = "com.bubble.consumer.controller")
+//@PropertySource("classpath:application.properties")
+//@ComponentScan(value = {"com.bubble.consumer.controller"})
 public class ConsumerApplication {
 
     public static void main(String[] args) {
