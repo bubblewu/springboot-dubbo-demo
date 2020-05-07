@@ -12,7 +12,8 @@ import org.apache.dubbo.config.annotation.Service;
  **/
 // 注意：这里的service注解用的不是spring的注解，
 // 而是org.apache.dubbo.config.annotation.Service;
-@Service(group = "base")
+@Service(version = "${dubbo.application.version}", application = "${dubbo.application.id}", group = "user",
+        protocol = "${dubbo.protocol.id}", registry = "${dubbo.registry.id}")
 public class UserServiceImpl implements UserService {
 
     @Override

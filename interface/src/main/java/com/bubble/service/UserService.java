@@ -9,7 +9,7 @@ import com.bubble.bean.UserBean;
  * date: 2020-05-03 16:38
  **/
 public interface UserService {
-    
+
     UserBean query(String id);
 
 }

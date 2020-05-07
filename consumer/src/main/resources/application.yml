@@ -1,0 +1,35 @@
+# Springboot服务配置
+server:
+  address: localhost
+  # web服务端口
+  port: 8082
+  servlet:
+    context-path: /
+
+# 日志配置
+logging:
+  config: classpath:logback.xml
+
+dubbo:
+  application:
+    id: user-demo
+    # 应用名称，每个dubbo应用的名称都是唯一的
+    name: user-consumer
+    # 版本号
+    version: 1.0.0
+#  # 配置元数据中心
+#  metadata-report:
+#    address: zookeeper://127.0.0.1:2181
+  registry:
+    id: chinaRegistry
+    # 注册中心
+    address: zookeeper://127.0.0.1:2181
+#    group: user-group
+  protocol:
+    id: dubbo-protocol
+  monitor:
+    protocol: registry
+  scan:
+    # 扫描服务注册bean，即需要使用到提供者服务的包路径
+    basePackages: com.bubble.consumer.controller
+
