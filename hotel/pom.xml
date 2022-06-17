@@ -22,7 +22,7 @@
         <swagger2markup.version>1.3.3</swagger2markup.version>
         <staticdocs.version>2.6.1</staticdocs.version>
         <restdocs-mockmvc.version>2.0.3.RELEASE</restdocs-mockmvc.version>
-        <fastjson.version>1.2.59</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
 
     </properties>
 
